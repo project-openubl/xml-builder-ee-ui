@@ -1,0 +1,1 @@
+{"version":3,"sources":["/home/travis/build/project-openubl/xml-builder-ee-ui/src/SmartComponents/DeleteDialog/DeleteDialog.scss"],"names":[],"mappings":"AAAA,mDACI,2BAA6B","file":"main.92aa4b0d.chunk.css","sourcesContent":[".pf-c-modal-box__footer > .pf-c-button:first-of-type {\n    margin-left: unset !important;\n}"]}
