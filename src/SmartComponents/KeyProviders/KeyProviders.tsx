@@ -26,7 +26,7 @@ import {
 } from "../../models/xml-builder";
 import { XmlBuilderRouterProps } from "../../models/routerProps";
 import { deleteDialogActions } from "../../store/deleteDialog";
-import { TableEmpty, TableError, TableSkeleton } from "xml-builder-react";
+import { TableEmpty, TableError, TableSkeleton } from "@projectopenubl/xml-builder-react";
 
 interface StateToProps {
   serverInfo: ServerInfoRepresentation | undefined;

@@ -21,7 +21,7 @@ import {
   TableSkeleton,
   TableError,
   TableEmpty
-} from "xml-builder-react";
+} from "@projectopenubl/xml-builder-react";
 
 interface StateToProps {
   organizationKeys: KeysMetadataRepresentation | undefined;

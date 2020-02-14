@@ -15,7 +15,7 @@ import {
   TableSkeleton,
   TableError,
   TableEmpty
-} from "xml-builder-react";
+} from "@projectopenubl/xml-builder-react";
 import { FetchStatus } from "../../store/common";
 import {
   ComponentRepresentation,

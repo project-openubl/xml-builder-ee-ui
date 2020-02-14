@@ -24,7 +24,7 @@ import {
   TableSkeleton,
   TableEmpty,
   TableError
-} from "xml-builder-react";
+} from "@projectopenubl/xml-builder-react";
 import {
   OrganizationRepresentation,
   SearchResultsRepresentation

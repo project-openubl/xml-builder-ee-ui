@@ -1,11 +1,11 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect, Link } from "react-router-dom";
 import {
   PageHome,
   PageForbidden403,
   PageNotFound404,
   PageServiceUnavailable503
-} from "xml-builder-react";
+} from "@projectopenubl/xml-builder-react";
 import RouterOrganizationContextLoader from "./SmartComponents/RouterOrganizationContextLoader";
 import { PageOrganizationList } from "./PresentationalComponents/PageOrganizationList";
 import { PageOrganizationEdit } from "./PresentationalComponents/PageOrganizationEdit";
@@ -22,7 +22,17 @@ export const AppRoutes = () => {
       <XmlBuilderRoute
         path="/home"
         render={() => (
-          <PageHome welcomeMessage="Bienvenido a XML Builder Signer" />
+          <PageHome
+            welcomeMessage="Bienvenido a XML Builder Signer"
+            buttonAdministrarServidor={
+              <Link
+                to="/organizations/list"
+                className="pf-c-button pf-m-primary"
+              >
+                Administrar
+              </Link>
+            }
+          />
         )}
       />
 
