@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Nav, NavItem, NavGroup } from "@patternfly/react-core";
-import { HomeIcon } from "@patternfly/react-icons";
+import { HomeIcon, BookOpenIcon } from "@patternfly/react-icons";
 import { OrganizationRepresentation } from "../../models/xml-builder";
 
 interface Props {
@@ -29,6 +29,12 @@ export class SidebarNav extends React.Component<Props, State> {
               &nbsp;Home
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink to="/swagger-ui" activeClassName="pf-m-current">
+              <BookOpenIcon />
+              &nbsp;API Docs
+            </NavLink>
+          </NavItem>
         </NavGroup>
         <NavGroup title="Consola administración">
           <NavItem key="organizations">
@@ -44,14 +50,14 @@ export class SidebarNav extends React.Component<Props, State> {
               Certificados digitales
             </NavLink>
           </NavItem>
-          <NavItem key="documents">
+          {/* <NavItem key="documents">
             <NavLink
               to={`/organizations/manage/${organizationId}/documents`}
               activeClassName="pf-m-current"
             >
               Comprobantes electrónicos
             </NavLink>
-          </NavItem>
+          </NavItem> */}
         </NavGroup>
       </Nav>
     );
