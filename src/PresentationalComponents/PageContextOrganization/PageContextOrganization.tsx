@@ -3,7 +3,7 @@ import { Switch } from "react-router-dom";
 import { XmlBuilderRouterProps } from "../../models/routerProps";
 import { PageOrganizationEdit } from "../PageOrganizationEdit";
 import { PageOrganizationKeys } from "../PageOrganizationKeys";
-import { PageOrganizationDocuments } from "../PageOrganizationDocuments";
+// import { PageOrganizationDocuments } from "../PageOrganizationDocuments";
 import RouterOrganizationContextSelector from "../../SmartComponents/RouterOrganizationContextSelector";
 
 interface Props extends XmlBuilderRouterProps {}
@@ -25,10 +25,10 @@ export class PageContextOrganization extends React.Component<Props, State> {
             path={`${match.path}/keys`}
             component={PageOrganizationKeys}
           />
-          <RouterOrganizationContextSelector
+          {/* <RouterOrganizationContextSelector
             path={`${match.path}/documents`}
             component={PageOrganizationDocuments}
-          />
+          /> */}
         </Switch>
       </React.Fragment>
     );

@@ -10,6 +10,7 @@ import RouterOrganizationContextLoader from "./SmartComponents/RouterOrganizatio
 import { PageOrganizationList } from "./PresentationalComponents/PageOrganizationList";
 import { PageOrganizationEdit } from "./PresentationalComponents/PageOrganizationEdit";
 import { PageContextOrganization } from "./PresentationalComponents/PageContextOrganization";
+import { PageSwaggerUI } from "./PresentationalComponents/PageSwaggerUI";
 
 const XmlBuilderRoute = (params: any) => {
   const { component: Component, ...rest } = params;
@@ -48,6 +49,8 @@ export const AppRoutes = () => {
         path="/organizations/manage/:organizationId"
         component={PageContextOrganization}
       />
+
+      <Route path="/swagger-ui" component={PageSwaggerUI} />
 
       <Route path="/error403" component={PageForbidden403} />
       <Route path="/error404" component={PageNotFound404} />
